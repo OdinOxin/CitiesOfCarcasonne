@@ -2,6 +2,11 @@ public class Programm
 {
     public static void main(String[] args)
     {
+        Fenster f = new Fenster("Cities of Carcassonne");  
+        
+        Kachel k = new Kachel();
+        f.add(k);
+        
         /*
         Kachel kachel1 = new Kachel(0); //Wert x=0 in Kachel verwenden
         //Typ Name = Wert

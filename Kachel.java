@@ -1,10 +1,33 @@
-public class Kachel
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import java.io.File;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+
+public class Kachel extends JPanel
 {
     private Kante n,o,s,w;
     private boolean abtei = false;
+    
+    private BufferedImage tile;
+    
     public Kachel()
     {
-        
+        try
+        {
+            tile = ImageIO.read(new File("tile_1.jpg"));
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+    }
+    
+    @Override
+    protected void paintComponent(Graphics g)
+    {
+        super.paintComponent(g);
+        g.drawImage(tile, 0, 0, this);
     }
     
     

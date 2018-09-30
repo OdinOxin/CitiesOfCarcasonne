@@ -1,4 +1,4 @@
-public class Stadtkachel extends Kachel //übernimmt Eigenschaften von Kachel
+/*public class Stadtkachel extends Kachel //übernimmt Eigenschaften von Kachel
 {
     private int wappen;
 
@@ -9,4 +9,4 @@ public class Stadtkachel extends Kachel //übernimmt Eigenschaften von Kachel
     }
 
     
-}
+}*/
